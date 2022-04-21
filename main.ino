@@ -6,10 +6,10 @@ Adafruit_NeoPixel pixels = Adafruit_NeoPixel(16, 6, NEO_GRB + NEO_KHZ800);
     Adafruit_NeoPixel(<LED의 갯수>, <LED와 연결된 핀 번호>, NEO_GRB + NEO_KHZ800); */
 
 void setup() {
-  Serial.begin(9600);  //Serial init
-  pixels.setBrightness(255);  //LED 밝기(0~255) 최대로 설정
-  pixels.begin();  //LED init
-  pixels.show();  //LED 가동 시작
+  Serial.begin(9600);                       //Serial init
+  pixels.setBrightness(255);                //LED 밝기(0~255) 최대로 설정
+  pixels.begin();                           //LED init
+  pixels.show();                            //LED 가동 시작
 }
 
 void loop() {
