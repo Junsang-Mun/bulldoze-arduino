@@ -16,10 +16,10 @@ void loop() {
   sensVal = analogRead(A0);                         //sensVal 변수에 A0에서 읽어온 값을 할당합니다. 아마 조도센서로 연결되어있겠지
   if(sensVal <= 700){                               //sensVal(=조도센서 값)이 700 이하라면
     Serial.println("Turn on LEDs");                 //LED가 켜졌다는 메시지를 보내고
-    printColor(pixels.Color(255,255,255);           //LED를 켭니다 (색상은 (255, 255, 255)).
+    printColor(pixels.Color(255,255,255));          //LED를 켭니다 (색상은 (255, 255, 255)).
   } else if(sensVal > 700){                         //sensVal이 700 초과라면
     Serial.println("Turn off LEDs");                //LED 꺼졌다는 메시지를 쏘고
-    printColor(pixels.Color(0,0,0);                 //LED를 켭니다 (색상은 (0, 0, 0), 즉 끈다는 의미임)
+    printColor(pixels.Color(0,0,0));                //LED를 켭니다 (색상은 (0, 0, 0), 즉 끈다는 의미임)
   }
 }
 
